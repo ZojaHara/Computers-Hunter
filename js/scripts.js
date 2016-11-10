@@ -17,15 +17,9 @@
 
 		function imgSource() {
 			var imageNumber = randomNumber(1,9);
-			// var numbersArray = [];
-			// numbersArray.push(imageNumber);
-			// console.log(numbersArray[0]);
 
-			elemsPhoto.src = "../pictures/comp_" + imageNumber + ".jpg";
 
-			// while(numbersArray[0]===imageNumber) {
-			// 	imageNumber = randomNumber(1,9);
-			// }
+			elemsPhoto.src = "pic/comp_" + imageNumber + ".jpg";
 
 			console.log(imageNumber);
 		}
