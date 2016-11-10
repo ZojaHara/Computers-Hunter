@@ -1,0 +1,36 @@
+@media all and (orientation: portrait) {
+  .ch__application {
+    flex-direction:column;
+    .select__container {
+      flex:.7 1;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      border-top:none;
+      border-right:none;
+      fieldset {
+        width: 40%;
+        label {
+          font-size: 4vmin;
+        }
+        .select__wrapper {
+          select{
+            font-size: 4.5vmin;
+          }
+        }
+      }
+      .submit {
+        font-size: 5vmin;
+      }
+    }
+    .product__container {
+      flex:1 .7;
+      height:62%;
+      .product__display {
+        width:80%;
+      }
+    }
+  }
+}

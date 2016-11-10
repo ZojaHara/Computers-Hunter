@@ -1,0 +1,70 @@
+
+@-webkit-keyframes opac {
+  100% {
+    opacity:1;
+  }
+}
+@keyframes opac {
+  100% {
+    opacity:1;
+  }
+}
+
+.opac {
+	-webkit-animation: opac 2s linear;
+  animation: opac 2s linear;
+	-webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+
+
+
+@keyframes computer__anim-one {
+  25% {
+    top:45%;
+    left:5%
+  }
+  50% {
+    top:75%;
+    left:10%;
+  }
+  75% {
+    top:45%;
+    left:5%
+  }
+  100% {
+    top:10%;
+    left:10%;
+  }
+}
+
+@keyframes computer__anim-two {
+  25% {
+    bottom:45%;
+    right:5%
+  }
+  50% {
+    bottom:75%;
+    right:10%;
+  }
+  75% {
+    bottom:45%;
+    right:5%
+  }
+  100% {
+    bottom:10%;
+    right:10%;
+  }
+}
+
+@keyframes loaders_elements {
+  50% {
+    -webkit-transform: perspective(500px) translateZ(50px) rotate(45deg);
+    transform: perspective(500px) translateZ(50px) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: perspective(500px) translateZ(0px) rotate(45deg);
+    transform: perspective(500px) translateZ(0px) rotate(45deg);
+  }
+}

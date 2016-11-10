@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>HTML</title>
+		<meta name="description" content="">
+		<meta name="author" content="chat">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
+		<link rel="stylesheet" type="text/css" href="css/mine.css">
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
+		<link rel="stylesheet" type="text/css" href="css/media-queries.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+	</head>
+
+	<body>
+
+			<section class="title__section">
+
+				<img src="pic/menu-alt.svg" alt="computers-hunter menu" class="centering menu__pic menu__pic-hamburger">
+				<img src="pic/arrow.svg" alt="computers-hunter arrow-back" class="centering menu__pic menu__pic-arrow">
+
+				<div class="title__wrapper">
+					<div class="menu__items menu__items-left">
+						<p class="menu__words menu__words-blue menu__words-left">Computers</p>
+						<p class="menu__words menu__words-pink menu__words-why">
+							<a href="#description__section">What it is?</a>
+						</p>
+					</div>
+					<div class="menu__items menu__items-right">
+						<p class="menu__words menu__words-blue menu__words-right">Hunter</p>
+						<p class="menu__words menu__words-pink menu__words-try">
+							<a href="#ch__application">Try it please!</a>
+						</p>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="description__section" class="description__section">
+
+				<img src="pic/screen-2.svg" alt="computers-hunter background" class="computer__anim computer__anim-one">
+				<img src="pic/screen-2.svg" alt="computers-hunter background" class="computer__anim computer__anim-two">
+
+				<div class="container__description">
+					<div class="product__description">
+						<p class="product__details product__details-one">
+							How much time do you waste on seeking your new computer? Would you like to save these precious hours?
+						</p>
+						<p class="product__details product__details-two">
+							Our infallible application can do all this work for you. Click a couple of times and you will find out what your dream machine looks like.
+						</p>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="ch__application" class="ch__application">
+
+				<form action="" method="" id="myForm" class="select__container">
+
+					<fieldset>
+						<label for="CPU">Processor</label>
+
+						<div class="select__wrapper">
+							<select class="select"  name="CPU" id="cpu">
+								<option value="" disabled selected>CPU</option>
+								<option value="i7 quad">i7 quad</option>
+								<option value="i7 dual">i7 dual</option>
+								<option value="i5 quad">i5 quad</option>
+								<option value="i5 dual">i5 dual</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<label for="RAM">Memory</label>
+
+						<div class="select__wrapper">
+							<select class="select" name="RAM" id="ram">
+								<option value="" disabled selected>RAM</option>
+								<option value="8 GB" >8 GB</option>
+								<option value="16 GB">16 GB</option>
+								<option value="32 GB">32 GB</option>
+								<option value="64 GB">64 GB</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<label for="GPU">Graphics</label>
+
+						<div class="select__wrapper">
+							<select class="select" name="GPU" id="gpu">
+								<option value="" disabled selected>GPU</option>
+								<option value="GTX 1080">GTX 1080</option>
+								<option value="GTX 980M">GTX 980M</option>
+								<option value="GTX 965M">GTX 965M</option>
+								<option value="GTX 880M">GTX 880M</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<label for="SSD">Disc</label>
+
+						<div class="select__wrapper">
+							<select class="select" name="SSD" id="ssd">
+								<option value="" disabled selected>SSD</option>
+								<option value="1000 GB">1000 GB</option>
+								<option value="500 GB">500 GB</option>
+								<option value="256 GB">256 GB</option>
+								<option value="120 GB">120 GB</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<button type="submit" class="submit">Send!</button>
+				</form>
+
+				<div class="product__container">
+
+					<div class="product__display">
+
+						<div class="product__loader">
+
+								<div class="rectangle__color">
+									<div class="rectangle__dark"></div>
+								</div>
+								<div class="rectangle__color">
+									<div class="rectangle__dark"></div>
+								</div>
+								<div class="rectangle__color">
+									<div class="rectangle__dark"></div>
+								</div>
+								<div class="rectangle__color">
+									<div class="rectangle__dark"></div>
+								</div>
+
+						</div>
+
+						<div class="display__elems display__elems-tip">Choose options!</div>
+						<div class="display__elems display__elems-alert nonvisible">Check all fields!</div>
+						<img alt="your computer" class="display__elems display__elems-photo nonvisible">
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<script
+					  src="https://code.jquery.com/jquery-3.1.1.min.js"
+					  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+					  crossorigin="anonymous">
+			</script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+</html>

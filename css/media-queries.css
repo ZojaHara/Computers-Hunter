@@ -1,0 +1,25 @@
+@media all and (orientation: portrait) {
+  .ch__application {
+    flex-direction: column; }
+    .ch__application .select__container {
+      flex: .7 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-top: none;
+      border-right: none; }
+      .ch__application .select__container fieldset {
+        width: 40%; }
+        .ch__application .select__container fieldset label {
+          font-size: 4vmin; }
+        .ch__application .select__container fieldset .select__wrapper select {
+          font-size: 4.5vmin; }
+      .ch__application .select__container .submit {
+        font-size: 5vmin; }
+    .ch__application .product__container {
+      flex: 1 .7;
+      height: 62%; }
+      .ch__application .product__container .product__display {
+        width: 80%; } }
+
+/*# sourceMappingURL=media-queries.css.map */
