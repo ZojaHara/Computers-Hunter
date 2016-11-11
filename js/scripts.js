@@ -9,20 +9,34 @@
 
 		var productLoader = document.querySelector(".product__loader");
 
+
 		function randomNumber(max, min) {
 		 	return	Math.round(Math.random() * (max - min) + min);
 		}
 
 
+		var numbersArray = [0];
 
 		function imgSource() {
-			var imageNumber = randomNumber(1,9);
 
+			var theLast = numbersArray[numbersArray.length-1];
+			console.log(theLast);
+
+			var imageNumber = randomNumber(1,9);
+			console.log(imageNumber);
+
+
+			while(theLast===imageNumber) {
+				imageNumber = randomNumber(1,9);
+			}
+
+			numbersArray.push(imageNumber);
+			console.log(numbersArray);
 
 			elemsPhoto.src = "pic/comp_" + imageNumber + ".jpg";
 
-			console.log(imageNumber);
 		}
+
 
 
 			var elems = [];
@@ -66,6 +80,7 @@
 			productLoader.style.transition = "opacity 0s linear";
 			opacity();
 			displayBox();
+
 
 
 		}, false);
