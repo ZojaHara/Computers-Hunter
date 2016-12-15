@@ -13,7 +13,6 @@ section {
 .centering {
 	top:50%;
 	left:50%;
-	-webkit-transform:translateY(-50%) translateX(-50%);
 	transform:translateY(-50%) translateX(-50%);
 }
 
@@ -61,10 +60,7 @@ a {
 		overflow: hidden;
 		font-family: 'Ruslan Display', cursive;
 		opacity:.7;
-
-		-webkit-animation: opac 2s;
 		animation: opac 2s;
-		-webkit-animation-fill-mode: forwards;
 		animation-fill-mode: forwards;
 
 		.menu__items-left {
@@ -336,8 +332,6 @@ a {
 
 					}
 
-
-
 			}
 
 			.display__elems {
@@ -346,9 +340,7 @@ a {
 				justify-content: center;
 				width:100%;
 				height: 100%;
-				// padding:5% 10%;
 				text-align: center;
-				// font-family: 'Archivo Narrow', sans-serif;
 				font-family: 'Ruslan Display', cursive;
 				font-size: 7vmin;
 				color:$gray;
@@ -360,8 +352,6 @@ a {
 				color:rgba($pink,.4);
 			}
 			.display__elems-photo {
-				// background: url(../../pictures/comp_4.jpg);
-				// background-size:cover;
 				max-width: 100%;
 				box-shadow:  -3vmin -3vmin 0vmin 3vmin $gray, 3vmin 3vmin 0vmin 3vmin $gray;
 			}
