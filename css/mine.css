@@ -7,9 +7,9 @@ section {
 .centering {
   top: 50%;
   left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-      -ms-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%); }
+  -webkit-transform: translateY(-50%) translateX(-40%);
+      -ms-transform: translateY(-50%) translateX(-40%);
+          transform: translateY(-50%) translateX(-40%); }
 
 .visibility {
   display: none; }
@@ -17,6 +17,39 @@ section {
 a {
   text-decoration: none;
   color: inherit; }
+
+.arrow {
+  width: 0.75em;
+  height: 2em;
+  background: #282828;
+  position: absolute;
+  left: 50%;
+  margin: 2em -0.375em;
+  opacity: 1;
+  background: #282828; }
+  .arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -0.85em;
+    left: -0.625em;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1em 1em 0 1em;
+    border-color: #282828 transparent transparent transparent; }
+
+.arrow__select {
+  top: 60%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.arrow__description {
+  background: #282828;
+  top: 110%; }
+  .arrow__description::after {
+    border-color: #282828 transparent transparent transparent; }
 
 .title__section {
   background: url(../pic/computer-title.jpg);
@@ -132,6 +165,10 @@ a {
         font-family: 'Archivo Narrow', sans-serif;
         font-size: 4.7vmin;
         text-indent: 5%; }
+        .description__section .container__description .product__description .product__details .details__scroll {
+          color: #282828;
+          font-size: 5.1vmin;
+          font-weight: bold; }
       .description__section .container__description .product__description .product__details:first-of-type {
         padding-bottom: 5%; }
 
@@ -174,24 +211,13 @@ a {
       .ch__application .select__container fieldset .select__wrapper {
         position: relative;
         margin-top: 2%; }
-        .ch__application .select__container fieldset .select__wrapper::after {
-          content: "";
-          display: block;
-          position: absolute;
-          top: 0%;
-          right: 10%;
-          height: 100%;
-          width: 18%;
-          background: #002739;
-          border: 2px solid #202020;
-          box-sizing: border-box; }
         .ch__application .select__container fieldset .select__wrapper select {
           width: 90%;
           font-family: inherit;
           background: rgba(40, 40, 40, 0.7);
           color: inherit;
           font-size: 3vmin;
-          border: 2px solid #202020;
+          border: 2px solid rgba(0, 0, 0, 0.8);
           cursor: pointer; }
           .ch__application .select__container fieldset .select__wrapper select option {
             padding: 1%; }
@@ -201,7 +227,9 @@ a {
       border: none;
       color: rgba(255, 255, 220, 0.8);
       font-size: 3.4vmin;
-      padding: 1% 7%; }
+      padding: 2% 7%;
+      border: 2px solid rgba(3, 91, 134, 0.5);
+      cursor: pointer; }
   .ch__application .product__container {
     -ms-flex: 4 1;
         -webkit-flex: 4 1;

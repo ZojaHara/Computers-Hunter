@@ -1,4 +1,9 @@
 @media all and (orientation: portrait) {
+  .arrow__select {
+    top: 6%;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
   .ch__application {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -33,5 +38,3 @@
       height: 62%; }
       .ch__application .product__container .product__display {
         width: 80%; } }
-
-/*# sourceMappingURL=media-queries.css.map */

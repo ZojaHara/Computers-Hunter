@@ -1,4 +1,10 @@
 @media all and (orientation: portrait) {
+
+  .arrow__select {
+    top:6%;
+    transform:rotate(180deg);
+  }
+  
   .ch__application {
     flex-direction:column;
     .select__container {

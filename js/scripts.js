@@ -9,6 +9,8 @@
 
 		var productLoader = document.querySelector(".product__loader");
 
+		var arrowSelect = document.querySelector(".arrow__select");
+
 
 		function randomNumber(max, min) {
 		 	return	Math.round(Math.random() * (max - min) + min);
@@ -77,6 +79,7 @@
 		form.addEventListener("submit", function(e){
 
 			e.preventDefault();
+			arrowSelect.style.opacity = 0;
 			productLoader.style.transition = "opacity 0s linear";
 			opacity();
 			displayBox();

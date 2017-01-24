@@ -16,10 +16,12 @@
 		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<!--build:css css/styles.min.css-->
 		<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css">
 		<link rel="stylesheet" type="text/css" href="css/mine.css">
 		<link rel="stylesheet" type="text/css" href="css/animations.css">
 		<link rel="stylesheet" type="text/css" href="css/media-queries.css">
+		<!--endbuild-->
 
 		<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
@@ -36,7 +38,7 @@
 					<div class="menu__items menu__items-left">
 						<p class="menu__words menu__words-blue menu__words-left">Computers</p>
 						<p class="menu__words menu__words-pink menu__words-why">
-							<a href="#description__section">What it is?</a>
+							<a href="#description__section">What is it?</a>
 						</p>
 					</div>
 					<div class="menu__items menu__items-right">
@@ -56,12 +58,14 @@
 
 				<div class="container__description">
 					<div class="product__description">
-						<p class="product__details product__details-one">
-							How much time do you waste on seeking your new computer? Would you like to save these precious hours?
+						<p class="product__details">
+							How much time do you waste on looking for your new computer? Would you like to save these precious hours?
 						</p>
-						<p class="product__details product__details-two">
-							Our infallible application can do all this work for you. Click a couple of times and you will find out what your dream machine looks like.
+						<p class="product__details">
+							Our infallible application can do all this work for you. <a href = "#ch__application" class="details__scroll">Scroll down</a> and you will find out what your dream machine looks like.
 						</p>
+
+						<a href = "#ch__application" class="arrow arrow__description"></a>
 					</div>
 				</div>
 
@@ -152,6 +156,7 @@
 						</div>
 
 						<div class="display__elems display__elems-tip">Choose options!</div>
+						<div class="arrow arrow__select"></div>
 						<div class="display__elems display__elems-alert nonvisible">Check all fields!</div>
 						<img alt="your computer" class="display__elems display__elems-photo nonvisible">
 
@@ -166,6 +171,8 @@
 					  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 					  crossorigin="anonymous">
 			</script>
+		<!--build:js js/main.min.js -->
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>
