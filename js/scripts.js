@@ -22,18 +22,13 @@
 		function imgSource() {
 
 			var theLast = numbersArray[numbersArray.length-1];
-			console.log(theLast);
-
 			var imageNumber = randomNumber(1,9);
-			console.log(imageNumber);
-
 
 			while(theLast===imageNumber) {
 				imageNumber = randomNumber(1,9);
 			}
 
 			numbersArray.push(imageNumber);
-			console.log(numbersArray);
 
 			elemsPhoto.src = "pic/comp_" + imageNumber + ".jpg";
 
@@ -83,8 +78,6 @@
 			productLoader.style.transition = "opacity 0s linear";
 			opacity();
 			displayBox();
-
-
 
 		}, false);
 
