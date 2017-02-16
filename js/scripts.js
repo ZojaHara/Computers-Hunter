@@ -10,6 +10,8 @@
 		var productLoader = document.querySelector(".product__loader");
 
 		var arrowSelect = document.querySelector(".arrow__select");
+		var chApplication = document.querySelector("#ch__application");
+
 
 
 		function randomNumber(max, min) {
@@ -22,13 +24,18 @@
 		function imgSource() {
 
 			var theLast = numbersArray[numbersArray.length-1];
+			console.log(theLast);
+
 			var imageNumber = randomNumber(1,9);
+			console.log(imageNumber);
+
 
 			while(theLast===imageNumber) {
 				imageNumber = randomNumber(1,9);
 			}
 
 			numbersArray.push(imageNumber);
+			console.log(numbersArray);
 
 			elemsPhoto.src = "pic/comp_" + imageNumber + ".jpg";
 
@@ -71,6 +78,8 @@
 				}, 2500);
 			}
 
+			var distance = chApplication.offsetTop;
+
 		form.addEventListener("submit", function(e){
 
 			e.preventDefault();
@@ -78,6 +87,7 @@
 			productLoader.style.transition = "opacity 0s linear";
 			opacity();
 			displayBox();
+			window.scrollTo(0, distance);
 
 		}, false);
 

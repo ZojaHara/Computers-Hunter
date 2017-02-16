@@ -1,9 +1,6 @@
 html, body {
   overflow-x: hidden; }
 
-section {
-  height: 100vh; }
-
 .centering {
   top: 50%;
   left: 50%;
@@ -40,18 +37,19 @@ a {
     border-color: #282828 transparent transparent transparent; }
 
 .arrow__select {
-  top: 60%;
+  top: 45%;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg); }
 
 .arrow__description {
   background: #282828;
-  top: 110%; }
+  top: 103%; }
   .arrow__description::after {
     border-color: #282828 transparent transparent transparent; }
 
 .title__section {
+  height: 100vh;
   background: url(../pic/computer-title.jpg);
   background-size: cover;
   background-attachment: fixed; }
@@ -112,10 +110,12 @@ a {
         text-align: center; }
 
 .description__section {
+  height: 100vh;
+  overflow: hidden;
   background: rgba(40, 40, 40, 0.97);
   position: relative;
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   .description__section:hover .computer__anim-one {
     -webkit-animation: computer__anim-one 8s linear;
@@ -145,8 +145,8 @@ a {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     border: 5px solid rgba(40, 40, 40, 0.9);
     box-sizing: border-box; }
@@ -173,28 +173,29 @@ a {
         padding-bottom: 5%; }
 
 .ch__application {
-  display: -ms-flexbox;
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      -webkit-flex-direction: row;
-          flex-direction: row; }
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh; }
   .ch__application .select__container {
-    -ms-flex: 1 2;
-        -webkit-flex: 1 2;
+    -webkit-flex: 1 2;
+        -ms-flex: 1 2;
             flex: 1 2;
     height: 100%;
-    display: -ms-flexbox;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        -webkit-flex-direction: column;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        -webkit-justify-content: space-around;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
             justify-content: space-around;
-    -ms-flex-align: center;
-        -webkit-align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
             align-items: center;
     font-family: 'Ruslan Display', cursive;
     background: linear-gradient(45deg, #161616, #3a3a3a);
@@ -203,7 +204,7 @@ a {
     box-sizing: border-box;
     color: rgba(255, 255, 220, 0.5); }
     .ch__application .select__container fieldset {
-      width: 80%;
+      width: 90%;
       position: relative; }
       .ch__application .select__container fieldset label {
         font-size: 3.3vmin;
@@ -231,12 +232,12 @@ a {
       border: 2px solid rgba(3, 91, 134, 0.5);
       cursor: pointer; }
   .ch__application .product__container {
-    -ms-flex: 4 1;
-        -webkit-flex: 4 1;
-            flex: 4 1;
-    height: 100%;
-    display: -ms-flexbox;
+    -webkit-flex: 3.5 1;
+        -ms-flex: 3.5 1;
+            flex: 3.5 1;
+    height: 100vh;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     background: repeating-linear-gradient(-45deg, rgba(40, 40, 40, 0.9), rgba(40, 40, 40, 0.9) 140px, rgba(40, 40, 40, 0.7) 0, rgba(40, 40, 40, 0.7) 280px), repeating-linear-gradient(45deg, rgba(40, 40, 40, 0.9), rgba(40, 40, 40, 0.9) 140px, rgba(40, 40, 40, 0.7) 0, rgba(40, 40, 40, 0.7) 280px); }
   .ch__application .product__display {
@@ -247,8 +248,8 @@ a {
     position: relative; }
     .ch__application .product__display .product__loader {
       position: absolute;
-      display: -ms-flexbox;
       display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
       top: 0;
       left: 0;
@@ -274,8 +275,8 @@ a {
             -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
         box-shadow: 1px 1px 3px white, -1px -1px 3px white;
-        display: -ms-flexbox;
         display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         -webkit-animation: loaders_elements 2s linear infinite;
                 animation: loaders_elements 2s linear infinite; }
@@ -299,25 +300,28 @@ a {
           top: calc(50% - 5vmin);
           left: 22%; }
     .ch__application .product__display .display__elems {
-      display: -ms-flexbox;
       display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      -ms-flex-align: center;
-          -webkit-align-items: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
               align-items: center;
-      -ms-flex-pack: center;
-          -webkit-justify-content: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
               justify-content: center;
       width: 100%;
-      height: 100%;
-      text-align: center;
-      font-family: 'Ruslan Display', cursive;
-      font-size: 7vmin;
-      color: #282828; }
-    .ch__application .product__display .display__elems-top {
-      color: #282828; }
-    .ch__application .product__display .display__elems-alert {
-      color: rgba(232, 128, 224, 0.4); }
+      height: 100%; }
+      .ch__application .product__display .display__elems .options__alert {
+        margin: 40% 0 0;
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        font-family: 'Ruslan Display', cursive;
+        font-size: 8.5vmin; }
+      .ch__application .product__display .display__elems .options__alert-gray {
+        color: #282828; }
+      .ch__application .product__display .display__elems .options__alert-rose {
+        color: rgba(232, 128, 224, 0.4); }
     .ch__application .product__display .display__elems-photo {
       max-width: 100%;
       box-shadow: -3vmin -3vmin 0vmin 3vmin #282828, 3vmin 3vmin 0vmin 3vmin #282828; }

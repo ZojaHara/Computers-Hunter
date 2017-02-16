@@ -1,34 +1,48 @@
-@media all and (orientation: portrait) {
+@function side($length) {
+  $result: $length / 1.414;
+  @return $result;
+}
+
+@media all and (max-width:767px) {
 
   .arrow__select {
-    top:6%;
-    transform:rotate(180deg);
+    transform:rotate(0deg);
   }
-  
+
+  .description__section {
+    .container__description {
+      width: side(118vmin);
+      height:side(118vmin);
+      .product__description {
+        .product__details {
+          font-size: 5.8vmin;
+        }
+      }
+    }
+  }
+
   .ch__application {
-    flex-direction:column;
+    height: 270vh;
+    flex-direction:column-reverse;
     .select__container {
-      flex:.7 1;
-
-      flex-direction: row;
-      flex-wrap: wrap;
       justify-content: space-around;
-
       border-top:none;
       border-right:none;
       fieldset {
-        width: 40%;
+        width: 70%;
         label {
-          font-size: 4vmin;
+          font-size: 6.5vmin;
+          display:block;
+          padding-top:3vmin;
         }
         .select__wrapper {
           select{
-            font-size: 4.5vmin;
+            font-size: 6vmin;
           }
         }
       }
       .submit {
-        font-size: 5vmin;
+        font-size: 7.5vmin;
       }
     }
     .product__container {
@@ -38,5 +52,59 @@
         width:80%;
       }
     }
+  }
+}
+
+@media all and (min-width:768px) and (max-width:1025px)  {
+  .arrow__select {
+    transform:rotate(0deg);
+  }
+
+  .ch__application {
+    height: 220vh;
+    flex-direction:column-reverse;
+    .select__container {
+      flex:.6 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-top:none;
+      border-right:none;
+      fieldset {
+        width: 40%;
+        label {
+          font-size: 6vmin;
+        }
+        .select__wrapper {
+          select{
+            font-size: 5.5vmin;
+          }
+        }
+      }
+      .submit {
+        font-size: 6vmin;
+      }
+    }
+    .product__container {
+      flex:1 .5;
+      height:62%;
+      .product__display {
+        width:80%;
+      }
+    }
+  }
+}
+
+@media all and (orientation:portrait) and (min-width:600px) and (max-width:1025px) {
+  .ch__application {
+    height:125vh;
+    .product__container {
+      flex:.8 .5;
+    }
+  }
+}
+@media all and (orientation:portrait) and (max-width:500px) {
+  .ch__application {
+    height:130vh;
   }
 }
