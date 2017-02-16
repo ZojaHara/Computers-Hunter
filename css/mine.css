@@ -161,7 +161,6 @@ a {
       color: rgba(255, 255, 200, 0.5);
       box-sizing: border-box; }
       .description__section .container__description .product__description .product__details {
-        padding: 1%;
         font-family: 'Archivo Narrow', sans-serif;
         font-size: 4.7vmin;
         text-indent: 5%; }
@@ -170,7 +169,7 @@ a {
           font-size: 5.1vmin;
           font-weight: bold; }
       .description__section .container__description .product__description .product__details:first-of-type {
-        padding-bottom: 5%; }
+        padding-bottom: 4%; }
 
 .ch__application {
   display: -webkit-flex;

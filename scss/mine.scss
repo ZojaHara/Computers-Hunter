@@ -202,7 +202,6 @@ a {
 			box-sizing: border-box;
 
 			.product__details {
-				padding:1%;
 				font-family: 'Archivo Narrow', sans-serif;
 				font-size: 4.7vmin;
 				text-indent: 5%;
@@ -213,7 +212,7 @@ a {
         }
 			}
 			.product__details:first-of-type {
-				padding-bottom:5%;
+				padding-bottom:4%;
 			}
 		}
 	}
