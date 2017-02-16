@@ -2,12 +2,8 @@ $blue:rgb(50, 98, 249);
 $pink:rgb(232, 128, 224);
 $gray:rgb(40,40,40);
 
-html, body {
+html{
   overflow-x: hidden;
-}
-
-section {
-	// height:100vh;
 }
 
 .centering {
@@ -375,7 +371,7 @@ a {
         width:100%;
         height: 100%;
         .options__alert {
-          margin:40% 0 0;
+          padding:40% 0 0;
           width:80%;
           height: 100%;
           text-align: center;

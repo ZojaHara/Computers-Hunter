@@ -1,4 +1,4 @@
-html, body {
+html {
   overflow-x: hidden; }
 
 .centering {
@@ -312,7 +312,7 @@ a {
       width: 100%;
       height: 100%; }
       .ch__application .product__display .display__elems .options__alert {
-        margin: 40% 0 0;
+        padding:40% 0 0;
         width: 80%;
         height: 100%;
         text-align: center;
