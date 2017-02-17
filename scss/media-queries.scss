@@ -6,16 +6,20 @@
 @media all and (max-width:767px) {
 
   .arrow__select {
-    transform:rotate(0deg);
+    transform:rotate(180deg);
+    top:6%;
   }
 
   .description__section {
     .container__description {
-      width: side(118vmin);
-      height:side(118vmin);
+      width: side(132vmin);
+      height:side(132vmin);
       .product__description {
         .product__details {
-          font-size: 5.9vmin;
+          font-size: 6.5vmin;
+          .details__scroll{
+            font-size: 7vmin;
+          }
         }
       }
     }
@@ -23,7 +27,7 @@
 
   .ch__application {
     height: 270vh;
-    flex-direction:column-reverse;
+    flex-direction:column;
     .select__container {
       justify-content: space-around;
       border-top:none;
@@ -31,21 +35,28 @@
       fieldset {
         width: 70%;
         label {
-          font-size: 6.5vmin;
+          font-size: 7vmin;
           display:block;
           padding-top:3vmin;
         }
         .select__wrapper {
           select{
-            font-size: 6vmin;
+            font-size: 7.5vmin;
           }
         }
       }
       .submit {
-        font-size: 7.5vmin;
+        font-size: 8.5vmin;
+        letter-spacing: 3px;
       }
     }
     .product__container {
+      // display:none;
+      // position:fixed;
+      // width:100vw;
+      // height:200vh;
+      // top:33%;
+      // left:0;
       flex:1 .7;
       height:62%;
       .product__display {
@@ -57,12 +68,12 @@
 
 @media all and (min-width:768px) and (max-width:1025px)  {
   .arrow__select {
-    transform:rotate(0deg);
+    transform:rotate(180deg);
   }
 
   .ch__application {
     height: 220vh;
-    flex-direction:column-reverse;
+    flex-direction:column;
     .select__container {
       flex:.6 1;
       flex-direction: row;
@@ -105,6 +116,19 @@
 }
 @media all and (orientation:portrait) and (max-width:500px) {
   .ch__application {
-    height:130vh;
+    height:160vh;
+    .select__container {
+      flex:2.5;
+      .submit {
+        margin:7% 0 7%;
+      }
+    }
+    .product__container {
+      flex:1.5;
+      height:50%;
+      .product__display {
+        height: 60%;
+      }
+    }
   }
 }
