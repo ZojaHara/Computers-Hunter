@@ -12,14 +12,14 @@
   opacity: 0;
   transition:all 1s linear;
 }
-@media all and (max-width:650px) {
+@media all and (max-width:768px) {
   .description__section {
     .computer__anim {
       display: none;
     }
     .container__description {
       width: side(147vmin);
-      height:side(147vmin);
+      height:side(143vmin);
       .product__description {
         .product__details {
           font-size: 7vmin;
@@ -31,9 +31,14 @@
     }
   }
 }
-@media all and (orientation:landscape) and (max-width:650px) {
+@media all and (orientation:landscape) and (max-width:768px) {
   .arrow__description {
     display:none;
+  }
+  .description__section {
+    .container__description {
+      height:side(147vmin);
+    }
   }
 }
 
@@ -80,7 +85,7 @@
   }
 }
 
-@media all and (min-width:499px) and (max-width:1125px)  {
+@media all and (min-width:499px) and (max-width:1025px)  {
   .ch__application {
     flex-direction:column;
     .choose-options {
