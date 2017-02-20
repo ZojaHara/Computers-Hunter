@@ -10,39 +10,29 @@
 		var productLoader = document.querySelector(".product__loader");
 
 		var arrowSelect = document.querySelector(".arrow__select");
-		var chApplication = document.querySelector("#ch__application");
-
 
 
 		function randomNumber(max, min) {
 		 	return	Math.round(Math.random() * (max - min) + min);
 		}
 
-
 		var numbersArray = [0];
 
 		function imgSource() {
+					var theLast = numbersArray[numbersArray.length-1];
+					var imageNumber = randomNumber(1,9);
 
-			var theLast = numbersArray[numbersArray.length-1];
-			console.log(theLast);
+					while(theLast===imageNumber) {
+						imageNumber = randomNumber(1,9);
+					}
 
-			var imageNumber = randomNumber(1,9);
-			console.log(imageNumber);
+					numbersArray.push(imageNumber);
 
-
-			while(theLast===imageNumber) {
-				imageNumber = randomNumber(1,9);
-			}
-
-			numbersArray.push(imageNumber);
-			console.log(numbersArray);
-
-			elemsPhoto.src = "pic/comp_" + imageNumber + ".jpg";
-
-		}
+					elemsPhoto.src = "pic/comp_" + imageNumber + ".jpg";
+				}
 
 
-
+//Select validation
 			var elems = [];
 			function selectValue() {
 				for(var i=0;i<select.length;i++) {
@@ -50,9 +40,7 @@
 						elems.push(i);
 					}
 				}
-				console.log(elems);
 			}
-
 
 			function displayBox() {
 				selectValue();
@@ -70,6 +58,7 @@
 
 			}
 
+//----------------------loader opacity
 			function opacity() {
 				productLoader.style.opacity = 1;
 
@@ -78,46 +67,43 @@
 				}, 2500);
 			}
 
+// Show-hide product container
 
+	var productContainer = document.querySelector(".product__container");
+	var closeCross = document.querySelector(".close__cross");
+
+	closeCross.addEventListener("click", function() {
+
+		function hideProduct() {
+			productContainer.style.display = "none";
+		}
+		productContainer.style.opacity = 0;
+		setTimeout(hideProduct, 1200);
+
+	},false);
+
+
+function showProduct() {
+		productContainer.style.display = "flex";
+		productContainer.style.opacity = 1;
+}
 
 		form.addEventListener("submit", function(e){
 
 			e.preventDefault();
 			arrowSelect.style.opacity = 0;
 			productLoader.style.transition = "opacity 0s linear";
+			showProduct();
 			opacity();
 			displayBox();
 
 		}, false);
 
-		// scroll down to product
-		var selectDistance = document.querySelector(".select__container").offsetTop;
-		var productDistance = document.querySelector(".product__container").offsetTop;
-
-		var contHeight = document.querySelector(".product__container").offsetHeight;
-		var productHeight = document.querySelector(".product__loader").offsetHeight;
-
-
-		var differance = productDistance - selectDistance;
-		var plusPixels = (contHeight - productHeight)/4;
-		var scrollValue = productDistance + plusPixels;
-		console.log(plusPixels);
-		
-		form.addEventListener("click", function() {
-			if(differance > 0) {
-				window.scrollTo(0, scrollValue);
-			}
-		}, false);
-
-
 })();
 
 
 (function($) {
-
-
-	$(document).ready(function() {
-
+//Smooth scrolling
 		$('a').on('click', function(event) {
 
 		var target = $( $(this).attr('href') );
@@ -130,10 +116,8 @@
 		}
 	});
 
-});
 
-
-
+//First section animations
 	$(".menu__pic-hamburger").on("click", function() {
 
 		$(this).animate({

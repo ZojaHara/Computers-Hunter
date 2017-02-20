@@ -11,6 +11,12 @@ html {
 .visibility {
   display: none; }
 
+.hidden {
+  width: 0;
+  height: 0;
+  white-space: nowrap;
+  color: transparent; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -36,7 +42,7 @@ a {
     border-color: #282828 transparent transparent transparent; }
 
 .arrow__select {
-  top: 22%;
+  top: 30%;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -179,7 +185,17 @@ a {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 100vh; }
+  height: 100vh;
+  font-family: 'Ruslan Display', cursive; }
+  .ch__application .choose-options {
+    display: none;
+    text-align: center;
+    color: #b47d7d;
+    font-size: 8.5vmin;
+    padding: 5.5vmin 0 2.5vmin;
+    border-top: 5px solid #424242;
+    box-sizing: border-box;
+    background: rgba(40, 40, 40, 0.97); }
   .ch__application .select__container {
     -webkit-flex: 1 2;
         -ms-flex: 1 2;
@@ -197,12 +213,11 @@ a {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: 'Ruslan Display', cursive;
-    background: linear-gradient(45deg, #161616, #3a3a3a);
     border-top: 5px solid #424242;
     border-right: 5px solid #424242;
     box-sizing: border-box;
-    color: rgba(255, 255, 220, 0.5); }
+    color: rgba(255, 255, 220, 0.5);
+    background: linear-gradient(45deg, #161616, #3a3a3a); }
     .ch__application .select__container fieldset {
       width: 78%;
       position: relative; }
@@ -227,7 +242,7 @@ a {
       font-family: inherit;
       background: rgba(10, 10, 10, 0.7);
       border: none;
-      color: rgba(255, 255, 220, 0.8);
+      color: #b47d7d;
       font-size: 3.4vmin;
       padding: 2% 7%;
       border: 2px solid rgba(3, 91, 134, 0.5);
@@ -240,10 +255,21 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    z-index: 5;
     background: repeating-linear-gradient(-45deg, rgba(40, 40, 40, 0.9), rgba(40, 40, 40, 0.9) 140px, rgba(40, 40, 40, 0.7) 0, rgba(40, 40, 40, 0.7) 280px), repeating-linear-gradient(45deg, rgba(40, 40, 40, 0.9), rgba(40, 40, 40, 0.9) 140px, rgba(40, 40, 40, 0.7) 0, rgba(40, 40, 40, 0.7) 280px); }
+  .ch__application .close__cross {
+    display: none;
+    font-size: 10vmin;
+    color: rgba(232, 128, 224, 0.8);
+    padding: 1% 3%;
+    background: #5b5b5b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer; }
   .ch__application .product__display {
     width: 70%;
-    height: 65%;
+    height: 63%;
     margin: auto;
     background: #5b5b5b;
     position: relative; }
@@ -316,8 +342,7 @@ a {
         width: 80%;
         height: 35%;
         text-align: center;
-        font-family: 'Ruslan Display', cursive;
-        font-size: 8.5vmin; }
+        font-size: 7.5vmin; }
       .ch__application .product__display .display__elems .options__alert-gray {
         color: #282828;
         padding: 27% 0 0; }
