@@ -75,17 +75,19 @@
 	closeCross.addEventListener("click", function() {
 
 		function hideProduct() {
-			productContainer.style.display = "none";
-		}
-		productContainer.style.opacity = 0;
-		setTimeout(hideProduct, 1200);
+				productContainer.style.display = "none";
+			}
+			productContainer.style.opacity = 0;
+			setTimeout(hideProduct, 1200);
 
 	},false);
 
 
 function showProduct() {
 		productContainer.style.display = "flex";
-		productContainer.style.opacity = 1;
+		setTimeout(function() {
+			productContainer.style.opacity = 1;
+		},150);
 }
 
 		form.addEventListener("submit", function(e){
